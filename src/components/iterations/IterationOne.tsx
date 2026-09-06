@@ -1264,7 +1264,7 @@ export const IterationOne: React.FC<IterationOneProps> = ({ onOpenProject, onOpe
 
           <div className={`text-center mt-8 font-sans text-xs ${isDarkMode ? 'text-[#EED3BA]/60' : 'text-gray-500'
             }`}>
-            Hand-crafted doodle portfolio for Anuj Patil
+            Fin
           </div>
         </footer>
 
