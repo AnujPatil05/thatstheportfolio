@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #49B6E5;
+    --secondary: #263D5B;
+    --success: #16A34A;
+    --warning: #D97706;
+    --danger: #DC2626;
+    --surface: #FFFFFF;
+    --text: #111827;
+  }
+
+  body {
+    color: #111827;
+    background-color: #FAFAFA;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-delius {
+  font-family: 'Delius Swash Caps', cursive, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Doodle hand-drawn border radiuses */
+.doodle-border {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.doodle-border-sm {
+  border-radius: 120px 10px 105px 10px/10px 105px 10px 120px;
+}
+
+.doodle-border-lg {
+  border-radius: 300px 25px 270px 20px/20px 270px 25px 300px;
+}
+
+.doodle-shadow {
+  box-shadow: 3px 4px 0px 0px #263D5B;
+}
+
+.doodle-shadow-hover:hover {
+  box-shadow: 5px 6px 0px 0px #263D5B;
+  transform: translate(-2px, -2px);
+}
+
+.doodle-shadow-sm {
+  box-shadow: 2px 2px 0px 0px #263D5B;
+}
+
+.doodle-shadow-blue {
+  box-shadow: 3px 4px 0px 0px #49B6E5;
+}
+
+.doodle-shadow-pressed:active {
+  box-shadow: 1px 1px 0px 0px #263D5B;
+  transform: translate(2px, 2px);
+}
+
+/* Hand-drawn grid & blueprint backgrounds */
+.bg-grid-doodle {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(38, 61, 91, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(38, 61, 91, 0.05) 1px, transparent 1px);
+}
+
+.bg-dots-doodle {
+  background-size: 20px 20px;
+  background-image: radial-gradient(rgba(73, 182, 229, 0.2) 1.5px, transparent 1.5px);
+}
+
+.bg-blueprint {
+  background-color: #FAFCFE;
+  background-image: 
+    linear-gradient(rgba(73, 182, 229, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(73, 182, 229, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.bg-blueprint-dark {
+  background-color: #151311;
+  background-image: 
+    linear-gradient(rgba(238, 211, 186, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(238, 211, 186, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.doodle-shadow-dark {
+  box-shadow: 3px 4px 0px 0px #EED3BA;
+}
+
+.doodle-shadow-dark-sm {
+  box-shadow: 2px 2px 0px 0px #EED3BA;
+}
+
+.doodle-shadow-dark-hover:hover {
+  box-shadow: 5px 6px 0px 0px #EED3BA;
+  transform: translate(-2px, -2px);
+}
+
+.doodle-shadow-velvet {
+  box-shadow: 3px 4px 0px 0px #4B262F;
+}
+
+.doodle-shadow-velvet-sm {
+  box-shadow: 2px 2px 0px 0px #4B262F;
+}
+
+
+/* Wobbly sketch highlight */
+.sketch-highlight {
+  position: relative;
+  display: inline-block;
+}
+.sketch-highlight::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: 2px;
+  height: 8px;
+  background-color: rgba(73, 182, 229, 0.3);
+  z-index: -1;
+  border-radius: 4px;
+  transform: rotate(-1deg);
+}
+
